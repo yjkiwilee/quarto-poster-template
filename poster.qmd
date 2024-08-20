@@ -31,6 +31,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri.
 
+```{r}
+install.packages("pacman")
+
+pacman::p_load("tidyverse")
+
+test <- tibble(a = c(0, 1), b = c(0, 1))
+
+ggplot(test, aes(x = a, y = b)) +
+  geom_point()
+```
+
 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
